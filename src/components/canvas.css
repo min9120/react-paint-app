@@ -1,0 +1,15 @@
+.Canvas-container {
+  flex: 4;
+  margin-right: 12px;
+}
+.Canvas-container canvas {
+  width: 100%;
+  height: 100%;
+  outline: 2px solid blue;
+}
+.Canvas-container .Cavas-deleteMode-btn {
+  position: absolute;
+}
+.Canvas-container .Cavas-zoom-btn {
+  position: absolute;
+}

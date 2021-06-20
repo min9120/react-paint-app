@@ -1,10 +1,12 @@
 import React from 'react';
-import './App.css';
+import Canvas from './paintBoard'
 
 function App() {
   return (
-    <div className="App">
-      헬로
+    <div>
+      <h1>gpf
+      </h1>
+      <Canvas/>
     </div>
   );
 }

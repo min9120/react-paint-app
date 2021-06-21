@@ -6,7 +6,7 @@ import './App.css'
 function App() {
   return (
     <div className ='App'>
-      <Canvas/>
+      <Canvas width = {window.innerWidth} height = {window.innerHeight}/>
       <List/>
     </div>
   );

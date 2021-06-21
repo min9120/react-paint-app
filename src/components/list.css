@@ -1,4 +1,6 @@
 .List-container {
-  flex: 1;
+  /* flex: 1; */
+  width: 30%;
+  height: 800px;
   outline: 2px solid blue;
 }

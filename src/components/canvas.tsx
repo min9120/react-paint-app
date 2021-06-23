@@ -1,9 +1,8 @@
 
 import React, { useCallback, useEffect, useRef, useState } from 'react';
-import {useDispatch, useSelector } from 'react-redux';
+import {useDispatch } from 'react-redux';
 import './canvas.css'
-import {RootStoreState} from "./../index"
-import { painterActions } from '../store/modules/painter';
+import { painterActions } from '../modules/painter';
 import { Coordinates } from '../interfaces/canvasInterface';
 
 function Canvas() {
@@ -43,6 +42,7 @@ function Canvas() {
       context.save();
       context.translate(translatePos.x, translatePos.y)
       context.scale(canvasScale, canvasScale);
+    
     }
   }
   const zoomIn = ()=>{
@@ -157,9 +157,7 @@ function Canvas() {
         onCreatePolygon()
         setPointArray([])
 
-        //새로운 다각형 생성
         setRecentPath2D(new Path2D());
-        console.log(path2Ds);
       }
       setIsDrawing(false);
     }

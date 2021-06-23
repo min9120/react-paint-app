@@ -1,11 +1,12 @@
+
+
+import { polygon } from "../interfaces/canvasInterface";
+
+//redux 상태관리를 ducks pattern 으로 구현하였습니다. 
 const CREATE = 'painter/CREATE';
 const DELETE = 'painter/DELETE';
 
-interface polygon{
-  id: number;
-  name: string;
-  points: Array<{x: number, y:number}>
-}
+
 export const painterActions = {
   create: (points:Array<{x:number, y:number}>)=> {
     return{type:CREATE, payload:{points}}},
